@@ -1,0 +1,39 @@
+.header{
+    font-size: 30px;
+    color: blue;
+    background-color: rgb(178, 178, 238);
+    text-align: center;
+    padding: 20px,20px,20px,20px;
+    margin-bottom: 20px;
+
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  
+tr:hover {background-color: #D6EEEE;}
+
+table{
+    border-collapse: collapse;
+    width: 60%;
+    align-content: center;
+    margin: 100px;
+    
+ }
+ 
+
+.container{
+text-align: center;
+margin-left: 300px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-right: 300px;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+letter-spacing: 0.05em;
+padding: 5,5,5,5;
+border: 5px;
+width: 100%;
+box-sizing: border-box;
+
+ }

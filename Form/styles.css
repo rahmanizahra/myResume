@@ -1,0 +1,31 @@
+body{
+    background-image: url("../Images//background.jpg");
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 30px;
+    color: blue;
+    background-color: rgb(187, 187, 245);
+    text-align: center;
+}
+h3{
+    margin-top: 100px;
+    margin-left: 600px;
+}
+div{
+    margin-bottom: 20px;
+    color: rgb(71, 69, 69);
+    padding: 5px;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    font-style: oblique;
+    background-color: rgb(227, 236, 236);
+     
+    
+}
+.container{
+  
+    margin-left: 600px;
+    margin-right:600px;
+}

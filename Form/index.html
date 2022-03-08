@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <h1>Practice with Forms </h1>
+</head>
+<body>
+    
+    <h3 > Please fill in the form</h3>
+
+    <form class="container">
+        <div>
+            <label >Name:</label>
+            <input type="text" name="name" />
+        </div>
+        <div>
+            <label>ID:</label>
+            <input type="number" name="id"/>
+        </div>
+        <div>
+            <label>Job:</label>
+            <input type="text" name="job"/>
+        </div>
+        <div>
+            <label>Age:</label>
+            <input type="number"/>
+        </div>
+        <div>
+            <label> upload your image:</label>
+            <input type="file"/>
+        </div>
+        <div>
+            <label>date of birth:</label>
+            <input type="date"/>
+        </div>
+        <div>
+            <label>type your email address:</label>
+            <input type="email"/>
+        </div>
+        
+        
+        <button id="bu1" onclick="firstfunction()">
+            submit
+        </button>
+         <button>
+            back
+        </button>
+        
+    </form>
+    <script>
+        function firstfunction(){
+        alert("You submitted your information successfully")
+        }
+
+        function showFace(number){
+            var pic;
+            if(number==1){
+            pic="../Images/happy.webp"
+            document.getElementById(hap).src = pic
+            }
+            else{
+            pic="../Images/sad.jpeg"
+            }
+            document.getElementById(sad).src = pic
+        }
+    </script>
+    <p style="margin-left: 600px;">
+        How do you feel?
+    </p>
+ 
+    <img id="hap" src="../Images/happy.webp" width="100" height="180" style="margin-left: 600px;">
+    <img id="sad" src="../Images/sad.jpeg" width="100" height="180" > 
+    <p>
+        <button onclick="showFace(1)" style="margin-left: 600px;">Happy</button>
+        <button  onclick="showFace(0)" >Sad</button> 
+    </p>  
+    
+   </body>
+</html>
