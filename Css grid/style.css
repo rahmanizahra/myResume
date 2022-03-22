@@ -12,13 +12,13 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-    max-width: 950px;
+    max-width:950px;
     background: rgb(235, 194, 194);
     margin:100px auto;
     padding: 10px;
     display: grid;
     border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr);/* 100px 200px 100px, pixel %percentage or fr(fraction*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;/* 100px 200px 100px, pixel %percentage or fr(fraction*/
     gap:10px 10px;
     column-gap: 10px;
     align-items: center;/*only used for parent containers*/
