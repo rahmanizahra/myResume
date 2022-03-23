@@ -78,9 +78,30 @@
         const text=document.createTextNode("I am added to the webpage by javaScript methods");
         x.appendChild(text);
         document.getElementById("add").appendChild(x);
-        document.getElementById("add").style.color="blue"
+        document.getElementById("add").style.color="blue";
+        document.getElementById("add").style.marginLeft="600px";
         }  
-       /* ;*/
+       
+        function myMove(){
+            let id = null;
+            const elem = document.getElementById("anime1"); 
+            const elem2 = document.getElementById("anime2"); 
+
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 50);
+            function frame() {
+              if (pos == 250) {
+                  clearInterval(id);
+               } else {
+                    pos++; 
+                    elem.style.top = pos + "px"; 
+                    elem.style.left = pos + "px"; 
+                    elem2.style.top = pos + "px"; 
+                    elem2.style.left = pos + "px";
+                }
+               }
+             }
     </script>
     <img id="hap" src="../Images/happy.webp" width="100" height="180" style="margin-left: 600px;">
     <p>
@@ -97,6 +118,11 @@
     </code>
     <button onclick="myFunction()">Append</button>
     <p id="add">the sentensce:</p>
+   <div id="anime-container">
+      <div id="anime1"></dive>  
+      <div id="anime2"></div>       
+   </div>
 
+   <p><button  onclick="myMove()" style="margin-left: 500px;">Click Me</button></p>
  </body>
 </html>
