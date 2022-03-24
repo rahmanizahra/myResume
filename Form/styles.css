@@ -1,8 +1,8 @@
-body{
+/* body{
     background-image: url("../Images//background.jpg");
     background-repeat: no-repeat;
     
-}
+} */
 h1{
     font-size: 30px;
     color: blue;
@@ -25,6 +25,14 @@ div{
      
     
 }
+.main-container{ 
+   /* display:grid; */
+   background-image: url("../Images//background.jpg");
+   background-repeat: no-repeat;
+   /* grid-template-columns: 3fr 1fr ; */
+   /* column-gap: 10px; */
+   /* max-width: 950px; */
+} 
 .container{
   
     margin-left: 600px;

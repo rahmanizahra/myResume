@@ -10,8 +10,9 @@
     <h1>Practice with Forms </h1>
 </head>
 <body>
+    <div class="main-container">
     
-    <h3 > Please fill in the form</h3>
+    <!-- <h3 > Please fill in the form</h3> -->
 
     <form class="container">
         <div>
@@ -60,6 +61,13 @@
     
     <p style="margin-left: 600px">
         How do you feel?
+        <p>
+            <img id="hap" src="../Images/happy.webp" width="100" height="180" style="margin-left: 600px;">
+        </p>
+         <p>
+            <button onclick="showFace(1)" style="margin-left: 600px;">Happy</button>
+            <button  onclick="showFace(0)" >Sad</button> 
+        </p>
     </p>  
     <!-- addin a picture to my website showing our feelings by script element -->
     <script>
@@ -101,27 +109,25 @@
                 }
                }
              }
-    </script>
-    <img id="hap" src="../Images/happy.webp" width="100" height="180" style="margin-left: 600px;">
-    <p>
-        <button onclick="showFace(1)" style="margin-left: 600px;">Happy</button>
-        <button  onclick="showFace(0)" >Sad</button> 
-    </p> 
-       <p style="margin-left:600px"> let do some codes:
+    </script>   
+    <p style="margin-left:600px"> let do some codes:
+        <p>
+            <code style="margin-left:600px">
+                x=3;
+                y=4;
+                z=x+y;
+             </code>
+        </p>
+         
     </p>
-    
-    <code style="margin-left:600px">
-        x=3;
-        y=4;
-        z=x+y;
-    </code>
-    <button onclick="myFunction()">Append</button>
-    <p id="add">the sentensce:</p>
-   <div id="anime-container">
-      <div id="anime1"></dive>  
-            
-   </div>
 
-   <p><button  onclick="myMove()" style="margin-left: 500px;">Click Me</button></p>
+    <button style="margin-left:600px" onclick="myFunction()">Append</button>
+     <p style="margin-left:600px" id="add">the sentensce:</p>
+     <div id="anime-container">
+     <div id="anime1"></div> </div>
+     <p style="margin-left:600px"> <button  onclick="myMove()" >See the animation</button></p>    
+   
+  
+</div>
  </body>
 </html>
