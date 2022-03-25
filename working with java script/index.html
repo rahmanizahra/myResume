@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with JS</title>
+</head>
+<body>
+    <h2>Java Script Objects</h2>
+    <p id="demo"></p>
+
+    <h2>Java Script Objects Properties</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <script>
+        const person={
+            name:"zahra",
+            age:"30",
+            country:"Canada",
+            books:{
+                book1:"math",
+                book2:"story",
+                book3:"programming",
+            }
+        }
+        const x=person;
+        x.country="Iran";
+
+
+        document.getElementById("demo").innerHTML=person.name+" is from "+person["country"]+" and has "+person.books.book1;
+        document.body.style.marginTop="50px";
+        document.body.style.marginLeft="100px";
+        document.getElementById("demo").style.color="blue";
+        document.body.style.backgroundColor="pink";
+        let txt="";
+        for(let n in person){
+            txt+= person[n]+ " "
+        }
+        document.getElementById("demo1").innerHTML=txt;
+        document.getElementById("demo2").innerHTML=JSON.stringify(person);
+    </script>
+    
+</body>
+</html>
